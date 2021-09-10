@@ -7,3 +7,5 @@ class UserService{
         axios.get(USERS_REST_API_URL);
     }
 }
+
+export default new UserService();
