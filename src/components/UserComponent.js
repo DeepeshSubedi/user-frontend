@@ -3,7 +3,8 @@ import userService from "../services/userService";
 
 class UserComponent extends React.Component{
 
-    constructor(){
+    constructor(props){
+        super(props)
         this.state={
             users:[]
         }
