@@ -28,7 +28,20 @@ class UserComponent extends React.Component{
                          <td>User Email</td>
                          </tr>   
                     </thead>
-                    
+                    <tbody>
+                        {
+                            this.state.users.map(
+                                user=>
+                                <tr key ={user.id}>
+                                    <td>{user.id}</td>
+                                    <td>{user.firstName}</td>
+                                    <td>{user.lastName}</td>
+                                    <td>{user.email}</td>
+
+                                </tr>
+                            )
+                        }
+                    </tbody>
 
                 </table>
 
